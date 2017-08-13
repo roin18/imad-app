@@ -17,13 +17,13 @@ app.get('/article-one', function (req, res) {
    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'))
 });
 app.get('/article-two', function (req, res) {
-  res.send('this is art 2 ');
+ res.sendFile(path.join(__dirname, 'ui', 'article-two.html'))
 });
 app.get('/article-three', function (req, res) {
   res.send('this is art 3 ');
 });
 app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+  res.sendFile(path.join(__dirname, 'ui', 'article-three.html'))
 });
 
 
