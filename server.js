@@ -13,13 +13,13 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-app.get('article-one', function (req, res) {
+app.get('/article-one', function (req, res) {
   res.send('this is art 1 ');
 });
-app.get('article-two', function (req, res) {
+app.get('/article-two', function (req, res) {
   res.send('this is art 2 ');
 });
-app.get('article-three', function (req, res) {
+app.get('/article-three', function (req, res) {
   res.send('this is art 3 ');
 });
 app.get('/ui/madi.png', function (req, res) {
